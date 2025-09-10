@@ -1,40 +1,29 @@
 import { Metadata } from "next";
+import { HeroCarousel } from "@/components/ui/HeroCarousel";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Bem-vindo à Consulting Company. Oferecemos soluções empresariais inovadoras para impulsionar o crescimento do seu negócio.",
+  description: "Bem-vindo à JA Automation. Oferecemos soluções empresariais inovadoras para impulsionar o crescimento do seu negócio.",
   openGraph: {
-    title: "Consulting Company - Soluções Empresariais Inovadoras",
-    description: "Bem-vindo à Consulting Company. Oferecemos soluções empresariais inovadoras para impulsionar o crescimento do seu negócio.",
-    url: "https://consulting-website.com",
+    title: "JA Automation - Soluções Empresariais Inovadoras",
+    description: "Bem-vindo à JA Automation. Oferecemos soluções empresariais inovadoras para impulsionar o crescimento do seu negócio.",
+    url: "https://ja-automation.com",
   },
 };
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Transformamos Desafios em
-              <span className="text-primary-200"> Oportunidades</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-100 animate-slide-up">
-              Soluções empresariais inovadoras para impulsionar o crescimento do seu negócio
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
-              <a href="/contato" className="btn-primary bg-white text-primary-600 hover:bg-primary-50">
-                Fale Conosco
-              </a>
-              <a href="/solutions" className="btn-outline border-white text-white hover:bg-white hover:text-primary-600">
-                Nossas Soluções
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Carousel */}
+      <HeroCarousel />
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Services Grid Section */}
+      <ServicesGrid />
 
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
@@ -88,20 +77,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary-600 text-white">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Pronto para Transformar seu Negócio?</h2>
-            <p className="text-xl mb-8 text-primary-100">
-              Entre em contato conosco e descubra como podemos ajudar sua empresa a alcançar novos patamares.
-            </p>
-            <a href="/contato" className="btn-primary bg-white text-primary-600 hover:bg-primary-50">
-              Solicitar Consultoria
-            </a>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }
