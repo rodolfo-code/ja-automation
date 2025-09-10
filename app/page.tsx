@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { HeroCarousel } from "@/components/ui/HeroCarousel";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { ProjectsCarousel } from "@/components/sections/ProjectsCarousel";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -24,6 +25,9 @@ export default function HomePage() {
 
       {/* Services Grid Section */}
       <ServicesGrid />
+
+      {/* Projects Carousel Section */}
+      <ProjectsCarousel />
 
       {/* Services Section */}
       <section className="py-20 bg-gray-50">

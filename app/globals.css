@@ -225,4 +225,29 @@
       transform: translateY(0);
     }
   }
+
+  /* Projects Carousel Styles */
+  .projects-swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden !important;
+  }
+
+  .projects-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+
+  .swiper-button-prev-projects,
+  .swiper-button-next-projects {
+    position: static !important;
+    margin: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .swiper-button-prev-projects:after,
+  .swiper-button-next-projects:after {
+    display: none !important;
+  }
 }
