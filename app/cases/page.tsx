@@ -1,117 +1,148 @@
-import { Metadata } from "next";
-import { caseStudies } from "@/lib/data";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Cases de Sucesso",
-  description: "Conheça nossos cases de sucesso e como ajudamos empresas a alcançar resultados extraordinários através de nossas soluções.",
-  openGraph: {
-    title: "Cases de Sucesso - Consulting Company",
-    description: "Conheça nossos cases de sucesso e como ajudamos empresas a alcançar resultados extraordinários através de nossas soluções.",
-    url: "https://consulting-website.com/cases",
-  },
-};
+import { useState, useMemo } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { caseStudies, industries } from "@/lib/casesData";
 
 export default function CasesPage() {
+  const [activeIndustry, setActiveIndustry] = useState("all");
+
+  const filteredCases = useMemo(() => {
+    if (activeIndustry === "all") {
+      return caseStudies;
+    }
+    return caseStudies.filter(caseStudy => caseStudy.industry === activeIndustry);
+  }, [activeIndustry]);
+
   return (
-    <div className="min-h-screen py-20">
-      <div className="container">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Cases de Sucesso</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubra como transformamos desafios em oportunidades e ajudamos empresas a alcançar resultados extraordinários.
-          </p>
+    <div className="min-h-screen bg-white">
+      {/* Banner */}
+      <section className="relative w-full h-[500px] overflow-hidden mt-20">
+        {/* Imagem de fundo */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/cases/banner_2.png"
+            alt="Cases de Sucesso - Automação Industrial"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay escuro para melhorar legibilidade do texto */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
-        {/* Cases Grid */}
-        <div className="space-y-16">
-          {caseStudies.map((caseStudy, index) => (
-            <div key={caseStudy.id} className={`flex flex-col lg:flex-row items-center gap-8 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-              <div className="flex-1">
-                <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <div className="mb-6">
-                    <span className="inline-block bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                      {caseStudy.industry}
-                    </span>
-                    <h2 className="text-2xl font-bold mb-2">{caseStudy.title}</h2>
-                    <p className="text-gray-600 font-medium">Cliente: {caseStudy.client}</p>
-                  </div>
-
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2 text-red-600">Desafio</h3>
-                      <p className="text-gray-700">{caseStudy.challenge}</p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2 text-blue-600">Solução</h3>
-                      <p className="text-gray-700">{caseStudy.solution}</p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2 text-green-600">Resultados</h3>
-                      <ul className="space-y-2">
-                        {caseStudy.results.map((result, resultIndex) => (
-                          <li key={resultIndex} className="flex items-center gap-3">
-                            <svg className="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span className="text-gray-700">{result}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        {/* Banner Content */}
+        <div className="relative z-10 h-full flex items-center">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl">
+              <div className="mb-8">
+                <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                  Success Stories
+                </h1>
+                <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-3xl">
+                  Discover how J&A Automation has transformed manufacturing processes across multiple industries with cutting-edge automation solutions.
+                </p>
               </div>
-
-              <div className="flex-1">
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-lg">
-                  <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span className="text-gray-600 font-medium">Imagem do Case</span>
-                  </div>
+              
+              {/* Professional Stats Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                  <div className="text-4xl font-bold text-white mb-2">{caseStudies.length}</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Projects</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                  <div className="text-4xl font-bold text-white mb-2">{industries.length - 1}</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Industries</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                  <div className="text-4xl font-bold text-white mb-2">15+</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Years</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                  <div className="text-4xl font-bold text-white mb-2">98%</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Success Rate</div>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Stats Section */}
-        <div className="mt-20 bg-primary-600 text-white p-8 rounded-lg">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Nossos Números</h2>
-            <p className="text-primary-100">Resultados que comprovam nossa excelência</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-primary-100">Projetos Concluídos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-primary-100">Taxa de Satisfação</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">3x</div>
-              <div className="text-primary-100">Crescimento Médio</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">24h</div>
-              <div className="text-primary-100">Tempo de Resposta</div>
-            </div>
           </div>
         </div>
+      </section>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <h2 className="text-3xl font-bold mb-4">Seu Próximo Case de Sucesso</h2>
-          <p className="text-xl text-gray-600 mb-8">Vamos conversar sobre como podemos transformar sua empresa também.</p>
-          <a href="/contato" className="btn-primary">
-            Iniciar Projeto
-          </a>
+      {/* Industry Filter */}
+      <section className="py-12 bg-gray-50 border-b">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-3">
+            {industries.map((industry) => (
+              <button
+                key={industry.id}
+                onClick={() => setActiveIndustry(industry.id)}
+                className={`px-8 py-3 rounded-full font-medium text-sm transition-all duration-300 border ${
+                  activeIndustry === industry.id
+                    ? 'bg-red-500/10 text-red-700 border-red-500/30 shadow-sm'
+                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50 hover:border-gray-400 hover:shadow-sm'
+                }`}
+              >
+                {industry.name}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Cases List */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            {filteredCases.length > 0 ? (
+              <div className="space-y-12">
+                {filteredCases.map((caseStudy, index) => (
+                  <div key={caseStudy.id} className={`flex flex-col lg:flex-row gap-8 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="bg-white p-8 rounded-lg border border-gray-200">
+                        <div className="mb-6">
+                          <h2 className="text-2xl font-bold text-gray-900 mb-2">{caseStudy.project}</h2>
+                          <p className="text-gray-600 font-medium">Project Period: {caseStudy.date}</p>
+                        </div>
+
+                        <div className="space-y-6">
+                          <div>
+                            <h3 className="text-lg font-semibold mb-2 text-gray-900">Project Description</h3>
+                            <p className="text-gray-700">{caseStudy.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Image Placeholder */}
+                    <div className="flex-1">
+                      <div className="bg-gray-100 rounded-lg h-80 flex items-center justify-center">
+                        <span className="text-gray-500 font-medium">Project Image</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-16">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  No Projects Found
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  We couldn't find any projects for the selected industry.
+                </p>
+                <button
+                  onClick={() => setActiveIndustry("all")}
+                  className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                >
+                  View All Projects
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

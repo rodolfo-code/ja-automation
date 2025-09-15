@@ -33,8 +33,8 @@ export function ProjectsCarousel() {
         <div className="relative">
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={18}
-            slidesPerView={3}
+            spaceBetween={20}
+            slidesPerView={3.2}
             navigation={{
               nextEl: '.swiper-button-next-projects',
               prevEl: '.swiper-button-prev-projects',
@@ -43,7 +43,6 @@ export function ProjectsCarousel() {
               delay: 5000,
               disableOnInteraction: false,
             }}
-            
             speed={800}
             className="projects-swiper w-full"
             breakpoints={{
@@ -71,7 +70,7 @@ export function ProjectsCarousel() {
                   
                   <Link
                     href="/cases"
-                    className="inline-block bg-blue-900 text-white px-8 py-3 font-medium hover:bg-blue-800 transition-colors duration-200"
+                    className="inline-block bg-red-600 text-white px-8 py-3 font-medium hover:bg-red-700 transition-colors duration-200"
                   >
                     To the J&A Magazine
                   </Link>
