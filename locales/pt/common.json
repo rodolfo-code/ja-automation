@@ -205,7 +205,7 @@
         "title": "Transformamos Desafios em Oportunidades",
         "subtitle": "Soluções empresariais inovadoras para impulsionar o crescimento do seu negócio",
         "primary": { "text": "Fale Conosco", "href": "/contato" },
-        "secondary": { "text": "Nossas Soluções", "href": "/solutions" },
+        "secondary": { "text": "Nossas Soluções", "href": "/services" },
         "image": "/images/home/carrossel_1.jpg"
       },
       {
@@ -218,7 +218,7 @@
       {
         "title": "Inovação e Excelência",
         "subtitle": "Parceria estratégica para o sucesso do seu projeto industrial",
-        "primary": { "text": "Saiba Mais", "href": "/solutions" },
+        "primary": { "text": "Saiba Mais", "href": "/services" },
         "secondary": { "text": "Entre em Contato", "href": "/contato" },
         "image": "/images/home/carrossel_3.jpg"
       }
