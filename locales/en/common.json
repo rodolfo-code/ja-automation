@@ -5,6 +5,7 @@
     "services": "Services",
     "contact": "Contact",
     "all": "All",
+    "allServices": "All Services",
     "close": "Close"
   },
   "services": {
@@ -102,6 +103,125 @@
     "subtitle": "Complete solutions for industrial automation and process optimization",
     "ctaText": "Ready to transform your industrial processes?",
     "viewAllServices": "View All Services",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "services": [
+      {
+        "id": 1,
+        "title": "PLC and IHM Programming",
+        "description": "Specialists in programmable logic controller and human-machine interface programming",
+        "icon": "⚙️"
+      },
+      {
+        "id": 2,
+        "title": "VFD Programming",
+        "description": "Configuration and programming of frequency inverters for motor control",
+        "icon": "🔄"
+      },
+      {
+        "id": 3,
+        "title": "Electrical Design",
+        "description": "Electrical design (On Eplan and Cad) of machines and equipment",
+        "icon": "⚡"
+      },
+      {
+        "id": 4,
+        "title": "Assembly of Panels",
+        "description": "Assembly and installation of industrial electrical panels",
+        "icon": "🔧"
+      },
+      {
+        "id": 5,
+        "title": "Machine Adequacy to Standard NR-12",
+        "description": "Adequacy of machines and equipment to work safety standards",
+        "icon": "🛡️"
+      },
+      {
+        "id": 6,
+        "title": "Technical Support",
+        "description": "Technical support for PLC maintenance and machinery and equipment specification",
+        "icon": "🆘"
+      },
+      {
+        "id": 7,
+        "title": "Consultancy in Engineering and Projects",
+        "description": "Consultancy for end user, managing all the stages of the project",
+        "icon": "📋"
+      },
+      {
+        "id": 8,
+        "title": "Training",
+        "description": "Logic and product sizing training and integration between engineering",
+        "icon": "🎓"
+      },
+      {
+        "id": 9,
+        "title": "Pneumatic, Hydraulic and Vacuum Project",
+        "description": "Pneumatic, Hydraulic and Vacuum Project (Plan A and P)",
+        "icon": "💨"
+      },
+      {
+        "id": 10,
+        "title": "Mitsubishi Representation",
+        "description": "Representation in PLC and VFD Mitsubishi and programming training",
+        "icon": "🏢"
+      }
+    ]
+  },
+  "aboutSection": {
+    "title": "About TAS Automation",
+    "presentation": {
+      "title": "Presentation",
+      "paragraphs": [
+        "TAS Automação was founded in 2008 by a group of Engineers from multinational engineering companies, with strong experience in industrial automation and maintenance projects. It started its work offering PLC programming, robots, electrical projects, line simulation, mechanical and pneumatic projects.",
+        "The experience acquired in the industry made TAS Automação stand out in the market for offering solutions that serve production, maintenance and projects.",
+        "Over time and through market acceptance, it has established partnerships with Siemens, Rockwell, Macomb Community College, Mitsubishi, Atlas Copco and RedLion."
+      ]
+    },
+    "projects": {
+      "title": "Our Projects",
+      "intro": "Currently offers solutions and projects for sectors of industries in general.",
+      "items": [
+        "PLC, HMI and Supervisory programming.",
+        "Line and process simulation with robots.",
+        "Electrical, mechanical, hydraulic and pneumatic design.",
+        "Technical assistance of electronic components.",
+        "Maintenance and operational training."
+      ]
+    },
+    "helpdesk": {
+      "paragraph": "Thinking about minimizing response time in maintenance emergencies, it has a Help Desk sector, where it operates online on the customer's PLC for rapid fault diagnosis."
+    }
+  },
+  "projectsCarousel": {
+    "title": "Cases",
+    "description": "Manufacturers and bottlers of beverages and food rely on J&A Automation and report on their experiences with our automation lines. Find out first-hand when there are new machine and plant solutions for the beverage and food industry.",
+    "linkText": "To the J&A Magazine",
+    "prevButton": "Previous",
+    "nextButton": "Next"
+  },
+  "heroCarousel": {
+    "slides": [
+      {
+        "title": "We Turn Challenges into Opportunities",
+        "subtitle": "Innovative business solutions to accelerate your company's growth",
+        "primary": { "text": "Contact Us", "href": "/contato" },
+        "secondary": { "text": "Our Solutions", "href": "/solutions" },
+        "image": "/images/home/carrossel_1.jpg"
+      },
+      {
+        "title": "Advanced Industrial Automation",
+        "subtitle": "Cutting-edge technology to optimize processes and increase productivity",
+        "primary": { "text": "See Our Cases", "href": "/cases" },
+        "secondary": { "text": "Request a Quote", "href": "/contato" },
+        "image": "/images/home/carrossel_2.jpg"
+      },
+      {
+        "title": "Innovation and Excellence",
+        "subtitle": "Strategic partnership for the success of your industrial project",
+        "primary": { "text": "Learn More", "href": "/solutions" },
+        "secondary": { "text": "Get in Touch", "href": "/contato" },
+        "image": "/images/home/carrossel_3.jpg"
+      }
+    ]
   }
 }

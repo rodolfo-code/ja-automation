@@ -1,49 +1,31 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "@/lib/i18n";
+import { useState } from "react";
 
-const services = [
-  {
-    id: 1,
-    title: "Process Technology",
-    description: "The suitable component for each process step of beverage production",
-    icon: "E"
-  },
-  {
-    id: 2,
-    title: "Filling and Packaging Technology",
-    description: "Tailor-made filling lines for glass and PET containers as well as cans",
-    icon: "A"
-  },
-  {
-    id: 3,
-    title: "Intralogistics",
-    description: "Slim processes and flexible material flows which optimally adapt to suit production and shipping",
-    icon: "E"
-  },
-  {
-    id: 4,
-    title: "Plastics Recycling",
-    description: "Individual modules via complete turnkey factory solutions",
-    icon: "♻"
-  },
-  {
-    id: 5,
-    title: "Lifecycle Service",
-    description: "Significantly reduce operating costs and produce efficiency gains",
-    icon: "♻"
-  },
-  {
-    id: 6,
-    title: "Digital Services",
-    description: "Identify optimisation potential and achieve better performance",
-    icon: "Q"
-  }
-];
+// Serviços agora vêm das traduções
 
 export function ServicesGrid() {
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
+  const [showAllServices, setShowAllServices] = useState(false);
+  
+  const services = (t as any).servicesGrid?.services || [];
+  const visibleServices = services;
+
+  const serviceSlugById: Record<number, string> = {
+    1: "plc-ihm",
+    2: "vfd",
+    3: "projetos-eletricos",
+    4: "montagem-paineis",
+    5: "nr12",
+    6: "suporte-tecnico",
+    7: "consultoria",
+    8: "treinamentos",
+    9: "pneumaticos",
+    10: "mitsubishi",
+  };
   
   return (
     <section className="relative py-20 bg-white overflow-hidden">
@@ -67,30 +49,95 @@ export function ServicesGrid() {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {services.map((service) => (
-            <div key={service.id} className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-              {/* Service Image */}
-              <div className="w-full h-48 relative">
-                <Image
-                  src="/images/home/services/service_card.avif"
-                  alt={service.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {services.slice(0, 6).map((service: any) => (
+            <Link
+              key={service.id}
+              href={`/${locale}/services/${serviceSlugById[service.id as number] || ""}`}
+              className="max-w-sm block h-full"
+            >
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
+                {/* Service Image */}
+                <div className="w-full h-48 relative">
+                  <Image
+                    src="/images/home/services/service_card.avif"
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 
-              {/* Content */}
-              <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-900 mb-3">
-                  {service.title}
-                </h2>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {service.description}
-                </p>
+                {/* Content */}
+                <div className="p-6 flex-1">
+                  <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                    {service.title}
+                  </h2>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
+          
+          {/* Cards adicionais com transição suave */}
+          <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 col-span-full transition-all duration-700 ease-in-out overflow-hidden ${showAllServices ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} pb-10`}>
+            {services.slice(6).map((service: any) => (
+              <Link
+                key={service.id}
+                href={`/${locale}/services/${serviceSlugById[service.id as number] || ""}`}
+                className="max-w-sm block h-full"
+              >
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
+                  {/* Service Image */}
+                  <div className="w-full h-48 relative">
+                    <Image
+                      src="/images/home/services/service_card.avif"
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="p-6 flex-1">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                      {service.title}
+                    </h2>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
+        
+        {/* Toggle Button */}
+        {services.length > 6 && (
+          <div className="flex justify-center mt-10">
+            <button
+              onClick={() => setShowAllServices(!showAllServices)}
+              className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-red-600 text-red-600 hover:bg-red-50 transition-all duration-300"
+              aria-label={showAllServices ? "Mostrar menos serviços" : "Mostrar mais serviços"}
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+                className={`transition-transform duration-300 ${showAllServices ? 'rotate-180' : ''}`}
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+        )}
 
         {/* Call to Action */}
         <div className="text-center mt-16">

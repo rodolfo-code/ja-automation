@@ -4,46 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from '@/lib/i18n';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const slides = [
-  {
-    id: 1,
-    image: '/images/home/carrossel_1.jpg',
-    title: 'Transformamos Desafios em Oportunidades',
-    subtitle: 'Soluções empresariais inovadoras para impulsionar o crescimento do seu negócio',
-    cta: {
-      primary: { text: 'Fale Conosco', href: '/contato' },
-      secondary: { text: 'Nossas Soluções', href: '/solutions' }
-    }
-  },
-  {
-    id: 2,
-    image: '/images/home/carrossel_2.jpg',
-    title: 'Automação Industrial Avançada',
-    subtitle: 'Tecnologia de ponta para otimizar processos e aumentar a produtividade',
-    cta: {
-      primary: { text: 'Conheça Nossos Cases', href: '/cases' },
-      secondary: { text: 'Solicitar Orçamento', href: '/contato' }
-    }
-  },
-  {
-    id: 3,
-    image: '/images/home/carrossel_3.jpg',
-    title: 'Inovação e Excelência',
-    subtitle: 'Parceria estratégica para o sucesso do seu projeto industrial',
-    cta: {
-      primary: { text: 'Saiba Mais', href: '/solutions' },
-      secondary: { text: 'Entre em Contato', href: '/contato' }
-    }
-  }
-];
-
 export function HeroCarousel() {
+  const { t, locale } = useTranslations();
+  const slides = (t as any).heroCarousel?.slides || [];
+
   return (
     <section className="relative h-[95vh] overflow-hidden">
       <Swiper
@@ -67,8 +38,8 @@ export function HeroCarousel() {
         loop={true}
         className="h-full"
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
+        {slides.map((slide: any, index: number) => (
+          <SwiperSlide key={index}>
             <div className="relative h-full w-full">
               {/* Imagem de fundo */}
               <div className="absolute inset-0">
@@ -77,7 +48,7 @@ export function HeroCarousel() {
                   alt={slide.title}
                   fill
                   className="object-cover"
-                  priority={slide.id === 1}
+                  priority={index === 0}
                 />
                 {/* Overlay escuro para melhorar legibilidade do texto */}
                 <div className="absolute inset-0 bg-black/40" />
@@ -95,16 +66,16 @@ export function HeroCarousel() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
                       <Link
-                        href={slide.cta.primary.href}
+                        href={`/${locale}${slide.primary?.href || ''}`}
                         className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200"
                       >
-                        {slide.cta.primary.text}
+                        {slide.primary?.text}
                       </Link>
                       <Link
-                        href={slide.cta.secondary.href}
+                        href={`/${locale}${slide.secondary?.href || ''}`}
                         className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200"
                       >
-                        {slide.cta.secondary.text}
+                        {slide.secondary?.text}
                       </Link>
                     </div>
                   </div>

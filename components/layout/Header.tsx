@@ -38,6 +38,7 @@ const createNavItems = (t: any, locale: string): MenuItem[] => [
     href: `/${locale}/services`, 
     hasChildren: true,
     children: [
+      { label: t.navigation.allServices || 'Todos os Serviços', href: `/${locale}/services` },
       { label: t.services["plc-ihm"], href: `/${locale}/services/plc-ihm` },
       { label: t.services.vfd, href: `/${locale}/services/vfd` },
       { label: t.services["electrical-projects"], href: `/${locale}/services/projetos-eletricos` },

@@ -51,6 +51,19 @@ export interface Translations {
     ctaText: string;
     viewAllServices: string;
     getInTouch: string;
+    services: Array<{
+      id: number;
+      title: string;
+      description: string;
+      icon: string;
+    }>;
+  };
+  projectsCarousel: {
+    title: string;
+    description: string;
+    linkText: string;
+    prevButton: string;
+    nextButton: string;
   };
 }
 
@@ -125,7 +138,76 @@ export function useTranslations() {
       subtitle: "Soluções completas para automação industrial e otimização de processos",
       ctaText: "Pronto para transformar seus processos industriais?",
       viewAllServices: "Ver Todos os Serviços",
-      getInTouch: "Entre em Contato"
+      getInTouch: "Entre em Contato",
+      services: [
+        {
+          id: 1,
+          title: "Programação de PLC e IHM",
+          description: "Especialistas em programação de controladores lógicos programáveis e interfaces homem-máquina",
+          icon: "⚙️"
+        },
+        {
+          id: 2,
+          title: "Programação de Drivers e Inversores",
+          description: "Configuração e programação de inversores de frequência para controle de motores",
+          icon: "🔄"
+        },
+        {
+          id: 3,
+          title: "Projeto Elétrico",
+          description: "Projeto elétrico (Em Eplan e Cad) de máquinas e equipamentos",
+          icon: "⚡"
+        },
+        {
+          id: 4,
+          title: "Montagem de Painéis",
+          description: "Montagem e instalação de painéis elétricos industriais",
+          icon: "🔧"
+        },
+        {
+          id: 5,
+          title: "Adequação de Máquinas a Norma NR-12",
+          description: "Adequação de máquinas e equipamentos às normas de segurança do trabalho",
+          icon: "🛡️"
+        },
+        {
+          id: 6,
+          title: "Suporte Técnico",
+          description: "Suporte técnico para manutenção de PLC e especificação de máquinas e equipamentos",
+          icon: "🆘"
+        },
+        {
+          id: 7,
+          title: "Consultoria em Engenharia e Projetos",
+          description: "Consultoria para usuário final, gerenciando todas as etapas do projeto",
+          icon: "📋"
+        },
+        {
+          id: 8,
+          title: "Treinamentos",
+          description: "Treinamento em lógica, dimensionamento e integração entre engenharias",
+          icon: "🎓"
+        },
+        {
+          id: 9,
+          title: "Projeto Pneumático, Hidráulico e Vácuo",
+          description: "Projeto Pneumático, Hidráulico e Vácuo (Plano A e P)",
+          icon: "💨"
+        },
+        {
+          id: 10,
+          title: "Representação Mitsubishi",
+          description: "Representação em PLC e VFD Mitsubishi e treinamento de programação",
+          icon: "🏢"
+        }
+      ]
+    },
+    projectsCarousel: {
+      title: "Projetos da TAS Automação",
+      description: "Fabricantes e engarrafadores de bebidas e alimentos confiam na TAS Automação e relatam suas experiências com nossas linhas de automação. Descubra em primeira mão quando há novas soluções de máquinas e plantas para a indústria de bebidas e alimentos.",
+      linkText: "Para a Revista TAS",
+      prevButton: "Anterior",
+      nextButton: "Próximo"
     }
   };
 
