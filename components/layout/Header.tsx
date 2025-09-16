@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "@/lib/i18n";
 
 // Definição de tipos para os itens de menu
 type MenuItem = {
@@ -17,31 +18,54 @@ type MenuItem = {
   }[];
 };
 
-// Menu items (ajuste conforme suas rotas reais)
-const NAV_ITEMS: MenuItem[] = [
-  { label: "Produtos", href: "/solutions", hasChildren: false },
-  { label: "Empresa", href: "/#company", hasChildren: false },  
+// Função para criar itens de menu baseados nas traduções
+const createNavItems = (t: any, locale: string): MenuItem[] => [
+  { label: t.navigation.company, href: `/${locale}/#company`, hasChildren: false },  
   { 
-    label: "Cases", 
-    href: "/cases", 
+    label: t.navigation.cases, 
+    href: `/${locale}/cases`, 
     hasChildren: true,
     children: [
-      { label: "Todos", href: "/cases" },
-      { label: "Beverages", href: "/cases?industry=Beverages" },
-      { label: "Energy", href: "/cases?industry=Energy" },
-      { label: "Automotive", href: "/cases?industry=Automotive" },
-      { label: "Cosmetics", href: "/cases?industry=Cosmetics" },
+      { label: t.navigation.all, href: `/${locale}/cases` },
+      { label: t.industries.beverages, href: `/${locale}/cases?industry=Beverages` },
+      { label: t.industries.energy, href: `/${locale}/cases?industry=Energy` },
+      { label: t.industries.automotive, href: `/${locale}/cases?industry=Automotive` },
+      { label: t.industries.cosmetics, href: `/${locale}/cases?industry=Cosmetics` },
     ] 
   },
-  { label: "Contato", href: "/contato", hasChildren: false },
+  { 
+    label: t.navigation.services, 
+    href: `/${locale}/services`, 
+    hasChildren: true,
+    children: [
+      { label: t.services["plc-ihm"], href: `/${locale}/services/plc-ihm` },
+      { label: t.services.vfd, href: `/${locale}/services/vfd` },
+      { label: t.services["electrical-projects"], href: `/${locale}/services/projetos-eletricos` },
+      { label: t.services["panel-assembly"], href: `/${locale}/services/montagem-paineis` },
+      { label: t.services["nr12-compliance"], href: `/${locale}/services/nr12` },
+      { label: t.services["technical-support"], href: `/${locale}/services/suporte-tecnico` },
+      { label: t.services.consulting, href: `/${locale}/services/consultoria` },
+      { label: t.services.training, href: `/${locale}/services/treinamentos` },
+      { label: t.services["pneumatic-projects"], href: `/${locale}/services/pneumaticos` },
+      { label: t.services["mitsubishi-representation"], href: `/${locale}/services/mitsubishi` },
+    ] 
+  },
+  { label: t.navigation.contact, href: `/${locale}/contato`, hasChildren: false },
 ];
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState("PT");
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const pathname = usePathname();
+  const router = useRouter();
+  const { locale, t, changeLocale } = useTranslations();
+  
+  // Criar itens de menu baseados nas traduções
+  const NAV_ITEMS = createNavItems(t as any, locale);
+  
+  // Determinar idioma atual baseado no locale
+  const currentLanguage = locale === 'en' ? 'EN' : 'PT';
 
   // Evita scroll do body quando o menu está aberto
   useEffect(() => {
@@ -91,7 +115,7 @@ export function Header() {
                   <button
                     className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
                     onClick={() => {
-                      setCurrentLanguage("PT");
+                      changeLocale('pt');
                       setIsLanguageOpen(false);
                     }}
                   >
@@ -100,7 +124,7 @@ export function Header() {
                   <button
                     className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
                     onClick={() => {
-                      setCurrentLanguage("EN");
+                      changeLocale('en');
                       setIsLanguageOpen(false);
                     }}
                   >
@@ -144,7 +168,7 @@ export function Header() {
               aria-label="Fechar menu"
             >
               <X className="h-5 w-5" />
-              <span className="text-sm">Fechar</span>
+              <span className="text-sm">{(t as any).navigation.close}</span>
             </button>
           </div>
 
@@ -187,7 +211,7 @@ export function Header() {
 
           {/* Rodapé opcional do drawer */}
           <div className="absolute bottom-0 left-0 right-0 p-6 text-gray-500 text-sm">
-            <p>© {new Date().getFullYear()} JA Automation. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} JA Automation. {(t as any).footer.rightsReserved}.</p>
           </div>
         </div>
       </aside>

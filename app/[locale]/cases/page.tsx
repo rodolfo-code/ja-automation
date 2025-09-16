@@ -1,12 +1,24 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { caseStudies, industries } from "@/lib/casesData";
 
 export default function CasesPage() {
   const [activeIndustry, setActiveIndustry] = useState("all");
+  const searchParams = useSearchParams();
+
+  // Aplicar filtro baseado no parâmetro da URL
+  useEffect(() => {
+    const industryParam = searchParams.get('industry');
+    console.log('Industry param from URL:', industryParam); // Debug log
+    if (industryParam && industries.some(industry => industry.id === industryParam)) {
+      setActiveIndustry(industryParam);
+      console.log('Filter applied for industry:', industryParam); // Debug log
+    }
+  }, [searchParams]);
 
   const filteredCases = useMemo(() => {
     if (activeIndustry === "all") {

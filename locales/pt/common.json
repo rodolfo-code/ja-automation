@@ -1,0 +1,107 @@
+{
+  "navigation": {
+    "company": "Empresa",
+    "cases": "Cases",
+    "services": "Serviços",
+    "contact": "Contato",
+    "all": "Todos",
+    "close": "Fechar"
+  },
+  "services": {
+    "plc-ihm": "Programação de PLC e IHM",
+    "vfd": "Programação de Drivers e Inversores",
+    "electrical-projects": "Projeto Elétrico",
+    "panel-assembly": "Montagem de Painéis",
+    "nr12-compliance": "Adequação de Máquinas a Norma NR-12",
+    "technical-support": "Suporte Técnico",
+    "consulting": "Consultoria em Engenharia e Projetos",
+    "training": "Treinamentos",
+    "pneumatic-projects": "Projeto Pneumático, Hidráulico e Vácuo",
+    "mitsubishi-representation": "Representação Mitsubishi"
+  },
+  "servicesDetails": {
+    "plc-ihm": {
+      "title": "Programação de PLC e IHM",
+      "description": "Especialistas em programação de controladores lógicos programáveis e interfaces homem-máquina",
+      "brands": [
+        "Siemens S5, S7 e TIA Portal",
+        "Rockwell: PLC-5, SLC-5000, Micrologix, Compact Logix e Logix",
+        "Mitsubishi",
+        "Omron",
+        "Panasonic",
+        "Unitronics"
+      ]
+    },
+    "vfd": {
+      "title": "Programação de Drivers e Inversores",
+      "description": "Configuração e programação de inversores de frequência para controle de motores",
+      "brands": [
+        "Emerson",
+        "Siemens",
+        "Rockwell",
+        "Mitsubishi",
+        "Sew",
+        "Danfoss"
+      ]
+    },
+    "electrical-projects": {
+      "title": "Projeto Elétrico",
+      "description": "Projeto elétrico (Em Eplan e Cad) de máquinas e equipamentos"
+    },
+    "panel-assembly": {
+      "title": "Montagem de Painéis",
+      "description": "Montagem e instalação de painéis elétricos industriais"
+    },
+    "nr12-compliance": {
+      "title": "Adequação de Máquinas a Norma NR-12",
+      "description": "Adequação de máquinas e equipamentos às normas de segurança do trabalho"
+    },
+    "technical-support": {
+      "title": "Suporte Técnico",
+      "description": "Suporte técnico para manutenção de PLC (\"on demand\" ou contrato) e especificação de máquinas e equipamentos"
+    },
+    "consulting": {
+      "title": "Consultoria em Engenharia e Projetos",
+      "description": "Consultoria para usuário final, gerenciando todas as etapas do projeto da cotação até a entrega final"
+    },
+    "training": {
+      "title": "Treinamentos",
+      "description": "Treinamento em lógica e dimensionamento de produtos, diagrama de trajeto passo, elaboração de lógica de trabalho e integração entre engenharias mecânica e elétrica"
+    },
+    "pneumatic-projects": {
+      "title": "Projeto Pneumático, Hidráulico e Vácuo",
+      "description": "Projeto Pneumático, Hidráulico e Vácuo (Plano A e P)"
+    },
+    "mitsubishi-representation": {
+      "title": "Representação Mitsubishi",
+      "description": "Representação em PLC e VFD Mitsubishi e treinamento de programação em PLC e IHM"
+    }
+  },
+  "industries": {
+    "beverages": "Beverages",
+    "energy": "Energy",
+    "automotive": "Automotive",
+    "cosmetics": "Cosmetics"
+  },
+  "common": {
+    "readMore": "Leia mais",
+    "learnMore": "Saiba mais",
+    "contactUs": "Entre em contato",
+    "getQuote": "Solicitar orçamento",
+    "viewAll": "Ver todos",
+    "backToTop": "Voltar ao topo"
+  },
+  "footer": {
+    "rightsReserved": "Todos os direitos reservados",
+    "followUs": "Siga-nos",
+    "quickLinks": "Links rápidos",
+    "contactInfo": "Informações de contato"
+  },
+  "servicesGrid": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções completas para automação industrial e otimização de processos",
+    "ctaText": "Pronto para transformar seus processos industriais?",
+    "viewAllServices": "Ver Todos os Serviços",
+    "getInTouch": "Entre em Contato"
+  }
+}

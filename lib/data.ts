@@ -78,8 +78,6 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 export const companyInfo: CompanyInfo = {
-  name: "Consulting Company",
-  description: "Empresa de consultoria especializada em soluções empresariais inovadoras. Transformamos desafios em oportunidades de crescimento.",
   address: {
     street: "Av. Paulista, 1000 - Conjunto 101",
     city: "São Paulo",

@@ -39,8 +39,6 @@ export interface ContactForm {
 }
 
 export interface CompanyInfo {
-  name: string;
-  description: string;
   address: {
     street: string;
     city: string;

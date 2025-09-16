@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="container pt-8 pb-4" >
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
+          {/* Company Info
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Consulting Company</h3>
             <p className="text-gray-300 mb-6 max-w-md">{companyInfo.description}</p>
@@ -29,7 +29,7 @@ export function Footer() {
                 <span className="text-gray-300">{companyInfo.contact.email}</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
           <div>
@@ -103,8 +103,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">© {currentYear} Consulting Company. Todos os direitos reservados.</p>
+        <div className="border-t border-gray-800 mt-8 pt-4 text-center">
+          <p className="text-gray-400 text-sm">© {currentYear} Consulting Company. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

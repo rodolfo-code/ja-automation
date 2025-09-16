@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "@/lib/i18n";
 
 const services = [
   {
@@ -40,6 +43,8 @@ const services = [
 ];
 
 export function ServicesGrid() {
+  const { t } = useTranslations();
+  
   return (
     <section className="relative py-20 bg-white overflow-hidden">
       {/* Background Effects */}
@@ -53,10 +58,10 @@ export function ServicesGrid() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our Services
+              {(t as any).servicesGrid?.title || "Our Services"}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Complete solutions for industrial automation and process optimization
+            {(t as any).servicesGrid?.subtitle || "Complete solutions for industrial automation and process optimization"}
           </p>
         </div>
 
@@ -90,20 +95,20 @@ export function ServicesGrid() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-lg text-gray-600 mb-8">
-            Ready to transform your industrial processes?
+            {(t as any).servicesGrid?.ctaText || "Ready to transform your industrial processes?"}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/solutions"
+              href="/services"
               className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-red-500/25"
             >
-              View All Solutions
+              {(t as any).servicesGrid?.viewAllServices || "View All Services"}
             </a>
             <a
               href="/contato"
               className="inline-block border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-all duration-200"
             >
-              Get in Touch
+              {(t as any).servicesGrid?.getInTouch || "Get in Touch"}
             </a>
           </div>
         </div>

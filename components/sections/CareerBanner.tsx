@@ -38,14 +38,14 @@ export function CareerBanner() {
             </div>
 
             {/* Botão de call-to-action */}
-            <div className="mb-8">
+            {/* <div className="mb-8">
               <Link
                 href="/contato"
                 className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 rounded-lg"
               >
                 Sua carreira na JA Automation
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

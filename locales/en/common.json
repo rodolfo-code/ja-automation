@@ -1,0 +1,107 @@
+{
+  "navigation": {
+    "company": "Company",
+    "cases": "Cases",
+    "services": "Services",
+    "contact": "Contact",
+    "all": "All",
+    "close": "Close"
+  },
+  "services": {
+    "plc-ihm": "PLC and HMI Programming",
+    "vfd": "VFD Programming",
+    "electrical-projects": "Electrical Projects",
+    "panel-assembly": "Panel Assembly",
+    "nr12-compliance": "NR-12 Compliance",
+    "technical-support": "Technical Support",
+    "consulting": "Consulting",
+    "training": "Training",
+    "pneumatic-projects": "Pneumatic Projects",
+    "mitsubishi-representation": "Mitsubishi Representation"
+  },
+  "servicesDetails": {
+    "plc-ihm": {
+      "title": "PLC and IHM Programming",
+      "description": "Specialists in programmable logic controller and human-machine interface programming",
+      "brands": [
+        "Siemens S5, S7 e TIA Portal",
+        "Rockwell: PLC-5, SLC-5000, Micrologix, Compact Logix e Logix",
+        "Mitsubishi",
+        "Omron",
+        "Panasonic",
+        "Unitronics"
+      ]
+    },
+    "vfd": {
+      "title": "VFD Programming",
+      "description": "Configuration and programming of frequency inverters for motor control",
+      "brands": [
+        "Emerson",
+        "Siemens",
+        "Rockwell",
+        "Mitsubishi",
+        "Sew",
+        "Danfoss"
+      ]
+    },
+    "electrical-projects": {
+      "title": "Electrical Design",
+      "description": "Electrical design (On Eplan and Cad) of machines and equipment"
+    },
+    "panel-assembly": {
+      "title": "Assembly of Panels",
+      "description": "Assembly and installation of industrial electrical panels"
+    },
+    "nr12-compliance": {
+      "title": "Machine Adequacy to Standard NR-12",
+      "description": "Adequacy of machines and equipment to work safety standards"
+    },
+    "technical-support": {
+      "title": "Technical Support",
+      "description": "Technical support for PLC maintenance (\"on demand\" or contract) and machinery and equipment specification"
+    },
+    "consulting": {
+      "title": "Consultancy in Engineering and Projects",
+      "description": "Consultancy for end user, managing all the stages of the project of the quotation until the final delivery"
+    },
+    "training": {
+      "title": "Training",
+      "description": "Logic and product sizing training, step path diagram, elaboration of work logic and integration between mechanical and electrical engineering"
+    },
+    "pneumatic-projects": {
+      "title": "Pneumatic, Hydraulic and Vacuum Project",
+      "description": "Pneumatic, Hydraulic and Vacuum Project (Plan A and P)"
+    },
+    "mitsubishi-representation": {
+      "title": "Mitsubishi Representation",
+      "description": "Representation in PLC and VFD Mitsubishi and programming training in PLC and IHM"
+    }
+  },
+  "industries": {
+    "beverages": "Beverages",
+    "energy": "Energy",
+    "automotive": "Automotive",
+    "cosmetics": "Cosmetics"
+  },
+  "common": {
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "getQuote": "Get quote",
+    "viewAll": "View all",
+    "backToTop": "Back to top"
+  },
+  "footer": {
+    "rightsReserved": "All rights reserved",
+    "followUs": "Follow us",
+    "quickLinks": "Quick links",
+    "contactInfo": "Contact information"
+  },
+  "servicesGrid": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for industrial automation and process optimization",
+    "ctaText": "Ready to transform your industrial processes?",
+    "viewAllServices": "View All Services",
+    "getInTouch": "Get in Touch"
+  }
+}
