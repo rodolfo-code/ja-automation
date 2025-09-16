@@ -46,7 +46,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Card Content */}
       <div className="p-6">
         {/* Category */}
-        <div className="text-sm text-blue-500 font-medium mb-3">{project.category}</div>
+        <div className="text-sm text-red-500 font-medium mb-3">{project.category}</div>
 
         {/* Title */}
         <h2 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
@@ -63,7 +63,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.tags.slice(0, 5).map((tag, index) => (
             <span 
               key={index} 
-              className="text-xs text-gray-500 hover:text-blue-600 cursor-pointer transition-colors"
+              className="text-xs text-gray-500 hover:text-red-600 cursor-pointer transition-colors"
             >
               #{tag}
             </span>
