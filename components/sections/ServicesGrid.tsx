@@ -147,7 +147,8 @@ export function ServicesGrid() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/services"
-              className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-red-500/25"
+              // className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-red-500/25"
+              className="inline-block border-2 border-red-600  text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 bg-red-600 text-white"
             >
               {(t as any).servicesGrid?.viewAllServices || "View All Services"}
             </a>

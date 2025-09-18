@@ -75,7 +75,8 @@ export function ProjectsCarousel() {
                   
                   <Link
                     href={`/${locale}/cases`}
-                    className="inline-block bg-red-600 text-white px-8 py-3 font-medium hover:bg-red-700 transition-colors duration-200"
+                    // className="inline-block bg-red-600 text-white px-8 py-3 font-medium hover:bg-red-700 transition-colors duration-200"
+                    className="inline-block border-2 border-red-600  text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 bg-red-600 text-white"
                   >
                     {carouselText?.linkText || "To the J&A Magazine"}
                   </Link>

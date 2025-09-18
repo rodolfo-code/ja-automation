@@ -96,7 +96,13 @@
     "rightsReserved": "Todos os direitos reservados",
     "followUs": "Siga-nos",
     "quickLinks": "Links rápidos",
-    "contactInfo": "Informações de contato"
+    "contactInfo": "Informações de contato",
+    "socialMedia": "Redes Sociais",
+    "home": "Home",
+    "solutions": "Soluções",
+    "cases": "Cases",
+    "contact": "Contato",
+    "copyright": "© {year} J&A Automação. Todos os direitos reservados."
   },
   "servicesGrid": {
     "title": "Nossos Serviços",
@@ -223,5 +229,71 @@
         "image": "/images/home/carrossel_3.jpg"
       }
     ]
+  },
+  "contactPage": {
+    "title": "Vamos conversar.",
+    "subtitle": "Conte-nos sobre seu",
+    "subtitle2": "projeto.",
+    "description": "Vamos criar algo juntos 🤝",
+    "contactPerson": "Pessoa de Contato",
+    "sendMessage": "Envie-nos uma mensagem🚀",
+    "form": {
+      "fullName": "Nome completo*",
+      "email": "Endereço de email*",
+      "subject": "Assunto",
+      "message": "Conte-nos mais sobre seu projeto*",
+      "submit": "Enviar mensagem"
+    }
+  },
+  "footer": {
+    "rightsReserved": "Todos os direitos reservados",
+    "followUs": "Siga-nos",
+    "quickLinks": "Links rápidos",
+    "contactInfo": "Informações de contato",
+    "socialMedia": "Redes Sociais",
+    "home": "Home",
+    "solutions": "Soluções",
+    "cases": "Cases",
+    "contact": "Contato",
+    "copyright": "© {year} J&A Automação. Todos os direitos reservados.",
+    "continents": {
+      "americas": "Américas",
+      "europe": "Europa",
+      "africaAsia": "África & Ásia"
+    },
+    "countries": {
+      "brazil": "Brasil",
+      "usa": "EUA",
+      "argentina": "Argentina",
+      "chile": "Chile",
+      "colombia": "Colômbia",
+      "mexico": "México",
+      "panama": "Panamá",
+      "peru": "Peru",
+      "paraguay": "Paraguai",
+      "canada": "Canadá",
+      "uruguay": "Uruguai",
+      "haiti": "Haiti",
+      "bahamas": "Bahamas",
+      "bolivia": "Bolívia",
+      "england": "Inglaterra",
+      "france": "França",
+      "belgium": "Bélgica",
+      "netherlands": "Países Baixos",
+      "germany": "Alemanha",
+      "switzerland": "Suíça",
+      "austria": "Áustria",
+      "italy": "Itália",
+      "czechRepublic": "República Tcheca",
+      "turkey": "Turquia",
+      "serbia": "Sérvia",
+      "congoDR": "Congo DR",
+      "nigeria": "Nigéria",
+      "angola": "Angola",
+      "qatar": "Catar",
+      "saudiArabia": "Arábia Saudita",
+      "philippines": "Filipinas",
+      "papuaNewGuinea": "Papua-Nova Guiné"
+    }
   }
 }

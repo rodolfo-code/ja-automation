@@ -44,6 +44,51 @@ export interface Translations {
     followUs: string;
     quickLinks: string;
     contactInfo: string;
+    socialMedia: string;
+    home: string;
+    solutions: string;
+    cases: string;
+    contact: string;
+    copyright: string;
+    continents: {
+      americas: string;
+      europe: string;
+      africaAsia: string;
+    };
+    countries: {
+      brazil: string;
+      usa: string;
+      argentina: string;
+      chile: string;
+      colombia: string;
+      mexico: string;
+      panama: string;
+      peru: string;
+      paraguay: string;
+      canada: string;
+      uruguay: string;
+      haiti: string;
+      bahamas: string;
+      bolivia: string;
+      england: string;
+      france: string;
+      belgium: string;
+      netherlands: string;
+      germany: string;
+      switzerland: string;
+      austria: string;
+      italy: string;
+      czechRepublic: string;
+      turkey: string;
+      serbia: string;
+      congoDR: string;
+      nigeria: string;
+      angola: string;
+      qatar: string;
+      saudiArabia: string;
+      philippines: string;
+      papuaNewGuinea: string;
+    };
   };
   servicesGrid: {
     title: string;
@@ -64,6 +109,21 @@ export interface Translations {
     linkText: string;
     prevButton: string;
     nextButton: string;
+  };
+  contactPage: {
+    title: string;
+    subtitle: string;
+    subtitle2: string;
+    description: string;
+    contactPerson: string;
+    sendMessage: string;
+    form: {
+      fullName: string;
+      email: string;
+      subject: string;
+      message: string;
+      submit: string;
+    };
   };
 }
 
@@ -131,7 +191,52 @@ export function useTranslations() {
       rightsReserved: "Todos os direitos reservados",
       followUs: "Siga-nos",
       quickLinks: "Links rápidos",
-      contactInfo: "Informações de contato"
+      contactInfo: "Informações de contato",
+      socialMedia: "Redes Sociais",
+      home: "Home",
+      solutions: "Soluções",
+      cases: "Cases",
+      contact: "Contato",
+      copyright: "© {year} J&A Automação. Todos os direitos reservados.",
+      continents: {
+        americas: "Américas",
+        europe: "Europa",
+        africaAsia: "África & Ásia"
+      },
+      countries: {
+        brazil: "Brasil",
+        usa: "EUA",
+        argentina: "Argentina",
+        chile: "Chile",
+        colombia: "Colômbia",
+        mexico: "México",
+        panama: "Panamá",
+        peru: "Peru",
+        paraguay: "Paraguai",
+        canada: "Canadá",
+        uruguay: "Uruguai",
+        haiti: "Haiti",
+        bahamas: "Bahamas",
+        bolivia: "Bolívia",
+        england: "Inglaterra",
+        france: "França",
+        belgium: "Bélgica",
+        netherlands: "Países Baixos",
+        germany: "Alemanha",
+        switzerland: "Suíça",
+        austria: "Áustria",
+        italy: "Itália",
+        czechRepublic: "República Tcheca",
+        turkey: "Turquia",
+        serbia: "Sérvia",
+        congoDR: "Congo DR",
+        nigeria: "Nigéria",
+        angola: "Angola",
+        qatar: "Catar",
+        saudiArabia: "Arábia Saudita",
+        philippines: "Filipinas",
+        papuaNewGuinea: "Papua-Nova Guiné"
+      }
     },
     servicesGrid: {
       title: "Nossos Serviços",
@@ -208,6 +313,21 @@ export function useTranslations() {
       linkText: "Para a Revista TAS",
       prevButton: "Anterior",
       nextButton: "Próximo"
+    },
+    contactPage: {
+      title: "Vamos conversar.",
+      subtitle: "Conte-nos sobre seu",
+      subtitle2: "projeto.",
+      description: "Vamos criar algo juntos 🤝",
+      contactPerson: "Pessoa de Contato",
+      sendMessage: "Envie-nos uma mensagem🚀",
+      form: {
+        fullName: "Nome completo*",
+        email: "Endereço de email*",
+        subject: "Assunto",
+        message: "Conte-nos mais sobre seu projeto*",
+        submit: "Enviar mensagem"
+      }
     }
   };
 

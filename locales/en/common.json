@@ -96,7 +96,13 @@
     "rightsReserved": "All rights reserved",
     "followUs": "Follow us",
     "quickLinks": "Quick links",
-    "contactInfo": "Contact information"
+    "contactInfo": "Contact information",
+    "socialMedia": "Social Media",
+    "home": "Home",
+    "solutions": "Solutions",
+    "cases": "Cases",
+    "contact": "Contact",
+    "copyright": "© {year} J&A Automation. All rights reserved."
   },
   "servicesGrid": {
     "title": "Our Services",
@@ -223,5 +229,71 @@
         "image": "/images/home/carrossel_3.jpg"
       }
     ]
+  },
+  "contactPage": {
+    "title": "Let's chat.",
+    "subtitle": "Tell me about your",
+    "subtitle2": "project.",
+    "description": "Let's create something together 🤝",
+    "contactPerson": "Contact Person",
+    "sendMessage": "Send us a message🚀",
+    "form": {
+      "fullName": "Full name*",
+      "email": "Email address*",
+      "subject": "Subject",
+      "message": "Tell us more about your project*",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "rightsReserved": "All rights reserved",
+    "followUs": "Follow us",
+    "quickLinks": "Quick links",
+    "contactInfo": "Contact information",
+    "socialMedia": "Social Media",
+    "home": "Home",
+    "solutions": "Solutions",
+    "cases": "Cases",
+    "contact": "Contact",
+    "copyright": "© {year} J&A Automation. All rights reserved.",
+    "continents": {
+      "americas": "Americas",
+      "europe": "Europe",
+      "africaAsia": "Africa & Asia"
+    },
+    "countries": {
+      "brazil": "Brazil",
+      "usa": "USA",
+      "argentina": "Argentina",
+      "chile": "Chile",
+      "colombia": "Colombia",
+      "mexico": "Mexico",
+      "panama": "Panama",
+      "peru": "Peru",
+      "paraguay": "Paraguay",
+      "canada": "Canada",
+      "uruguay": "Uruguay",
+      "haiti": "Haiti",
+      "bahamas": "Bahamas",
+      "bolivia": "Bolivia",
+      "england": "England",
+      "france": "France",
+      "belgium": "Belgium",
+      "netherlands": "Netherlands",
+      "germany": "Germany",
+      "switzerland": "Switzerland",
+      "austria": "Austria",
+      "italy": "Italy",
+      "czechRepublic": "Czech Republic",
+      "turkey": "Turkey",
+      "serbia": "Serbia",
+      "congoDR": "Congo DR",
+      "nigeria": "Nigeria",
+      "angola": "Angola",
+      "qatar": "Qatar",
+      "saudiArabia": "Saudi Arabia",
+      "philippines": "Philippines",
+      "papuaNewGuinea": "Papua New Guinea"
+    }
   }
 }
