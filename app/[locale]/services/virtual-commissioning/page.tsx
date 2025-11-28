@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { translations } from "./translations";
 import ContactCTASection from "@/components/sections/ContactCTASection";
 
-export default function PanelAssemblyPage() {
+export default function VirtualCommissioningPage() {
   const params = useParams();
   const locale = (params?.locale as string) || "pt";
   const t = (translations as any)[locale] || translations.pt;
@@ -18,7 +18,7 @@ export default function PanelAssemblyPage() {
           <Image src="/images/home/services/service_card.avif" alt="Virtual Commissioning" fill className="object-cover" />
         </div>
         <div className="container mx-auto px-4 py-16 relative z-10 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t.hero.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Virtual Commissioning (VCx)</h1>
           <p className="text-xl md:text-2xl max-w-3xl opacity-90">
             {locale === "en"
               ? "Virtual validation of systems before physical implementation"

@@ -1,5 +1,9 @@
 import { MetadataRoute } from "next";
 
+export function generateStaticParams() {
+  return [{ locale: "pt" }, { locale: "en" }];
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://consulting-website.com";
 

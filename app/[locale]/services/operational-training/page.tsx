@@ -5,14 +5,13 @@ import { useParams } from "next/navigation";
 import { translations } from "./translations";
 import ContactCTASection from "@/components/sections/ContactCTASection";
 
-export default function PanelAssemblyPage() {
+export default function TrainingPage() {
   const params = useParams();
   const locale = (params?.locale as string) || "pt";
   const t = (translations as any)[locale] || translations.pt;
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero Section */}
       <div className="relative h-[40vh] min-h-[300px] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 overflow-hidden opacity-20">
           <Image src="/images/home/services/service_card.avif" alt="Virtual Commissioning" fill className="object-cover" />

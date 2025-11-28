@@ -10,13 +10,13 @@
   },
   "services": {
     "plc-ihm": "Programação de PLC e IHM",
-    "vfd": "Programação de Drivers e Inversores",
-    "electrical-projects": "Projeto Elétrico",
-    "panel-assembly": "Montagem de Painéis",
-    "nr12-compliance": "Adequação de Máquinas a Norma NR-12",
-    "technical-support": "Suporte Técnico",
+    "robotic-simulation": "Simulação Robótica",
+    "biw": "Projetos BIW",
+    "virtual-commissioning": "Comissionamento Virtual (VCx)",
+    "montagem-paineis": " Electrical / Mechanical / Hydraulic / Pneumatic Design",
+    "technical-support": "Help Desk e Suporte Remoto",
+    "operational-training": "Treinamento Operacional",
     "consulting": "Consultoria em Engenharia e Projetos",
-    "training": "Treinamentos",
     "pneumatic-projects": "Projeto Pneumático, Hidráulico e Vácuo",
     "mitsubishi-representation": "Representação Mitsubishi"
   },
@@ -79,10 +79,10 @@
     }
   },
   "industries": {
-    "beverages": "Beverages",
-    "energy": "Energy",
-    "automotive": "Automotive",
-    "cosmetics": "Cosmetics"
+    "beverages": "Bebidas",
+    "energy": "Energia",
+    "automotive": "Automotivo",
+    "cosmetics": "Cosméticos"
   },
   "common": {
     "readMore": "Leia mais",
@@ -91,18 +91,6 @@
     "getQuote": "Solicitar orçamento",
     "viewAll": "Ver todos",
     "backToTop": "Voltar ao topo"
-  },
-  "footer": {
-    "rightsReserved": "Todos os direitos reservados",
-    "followUs": "Siga-nos",
-    "quickLinks": "Links rápidos",
-    "contactInfo": "Informações de contato",
-    "socialMedia": "Redes Sociais",
-    "home": "Home",
-    "solutions": "Soluções",
-    "cases": "Cases",
-    "contact": "Contato",
-    "copyright": "© {year} J&A Automação. Todos os direitos reservados."
   },
   "servicesGrid": {
     "title": "Nossos Serviços",
@@ -113,85 +101,67 @@
     "services": [
       {
         "id": 1,
-        "title": "Programação de PLC e IHM",
+        "title": "Programação PLC & HMI",
         "description": "Especialistas em programação de controladores lógicos programáveis e interfaces homem-máquina",
         "icon": "⚙️"
       },
       {
         "id": 2,
-        "title": "Programação de Drivers e Inversores",
+        "title": "Robótica & Simulação",
         "description": "Configuração e programação de inversores de frequência para controle de motores",
         "icon": "🔄"
       },
       {
         "id": 3,
-        "title": "Projeto Elétrico",
+        "title": "Projetos BIW (Body in White)",
         "description": "Projeto elétrico (Em Eplan e Cad) de máquinas e equipamentos",
         "icon": "⚡"
       },
       {
         "id": 4,
-        "title": "Montagem de Painéis",
+        "title": "Virtual Commissioning (VCx)",
         "description": "Montagem e instalação de painéis elétricos industriais",
         "icon": "🔧"
       },
       {
         "id": 5,
-        "title": "Adequação de Máquinas a Norma NR-12",
+        "title": "Projetos Elétricos / Mecânicos / Hidráulicos / Pneumáticos",
         "description": "Adequação de máquinas e equipamentos às normas de segurança do trabalho",
         "icon": "🛡️"
       },
       {
         "id": 6,
-        "title": "Suporte Técnico",
+        "title": "Help Desk & Suporte Remoto",
         "description": "Suporte técnico para manutenção de PLC e especificação de máquinas e equipamentos",
         "icon": "🆘"
       },
       {
         "id": 7,
-        "title": "Consultoria em Engenharia e Projetos",
+        "title": "Treinamento Operacional",
         "description": "Consultoria para usuário final, gerenciando todas as etapas do projeto",
         "icon": "📋"
-      },
-      {
-        "id": 8,
-        "title": "Treinamentos",
-        "description": "Treinamento em lógica, dimensionamento e integração entre engenharias",
-        "icon": "🎓"
-      },
-      {
-        "id": 9,
-        "title": "Projeto Pneumático, Hidráulico e Vácuo",
-        "description": "Projeto Pneumático, Hidráulico e Vácuo (Plano A e P)",
-        "icon": "💨"
-      },
-      {
-        "id": 10,
-        "title": "Representação Mitsubishi",
-        "description": "Representação em PLC e VFD Mitsubishi e treinamento de programação",
-        "icon": "🏢"
       }
     ]
   },
   "aboutSection": {
-    "title": "Sobre a TAS Automação",
+    "title": "Sobre a J&A Automação",
     "presentation": {
       "title": "Apresentação",
       "paragraphs": [
-        "A TAS Automação foi fundada em 2008, por um grupo de Engenheiros vindos de Multinacionais do ramo de Engenharia, com forte experiência em projetos de automação industrial e manutenção. Iniciou o seu trabalho oferecendo programação de PLC, Robô, Projetos Elétricos, Simulação de Linha, Mecânicos e Pneumáticos.",
-        "A experiência adquirida na indústria fez com que a TAS Automação começasse a se destacar no mercado por oferecer soluções que atendam a produção, menutenção e projeto.",
-        "Com o passar do tempo e através da aceitação do mercado, estabeleceu parcerias com Siemens, Rockwell, Macomb Community College, Mitsubishi, Atlas Copco, RedLion."
-      ]
-    },
+        "Especialização Global, Impacto Local. Desde 2008, a J&A Automação vem transformando indústrias através de soluções avançadas de automação. Com presença em mais de 30 países e parcerias com líderes globais, desenvolvemos eficiência, segurança e inovação para as fábricas do futuro.",
+        "Fundada em 2008 por um grupo de engenheiros de empresas multinacionais dos setores automotivo e de aviação, a J&A Automação nasceu com uma missão clara: entregar projetos de automação e manutenção de classe mundial.",
+      "Desde nossos primeiros dias desenvolvendo soluções de PLC e HMI, expandimos para robótica, projetos BIW, simulação e comissionamento virtual, tornando-nos um parceiro confiável para indústrias que não podem se dar ao luxo de ter tempo de inatividade.",
+"Hoje, a J&A Automação opera em 30 países, com projetos entregues nas Américas, Europa, África e Ásia. Nosso portfólio inclui colaborações com gigantes da indústria como Tesla, GM, Coca-Cola, Heineken, FEMSA, Paulaner e muitos outros.",
+        "Com equipes multilíngues fluentes em inglês, alemão e espanhol, e treinamento direto com fabricantes como Siemens, Rockwell, Mitsubishi, Atlas Copco e RedLion, garantimos padrões mundiais adaptados às necessidades locais."
+        ]
+        },
     "projects": {
-      "title": "Nossos projetos",
-      "intro": "Atualmente oferece soluções e projetos para setores de industrias em geral.",
+      "title": "Nossos Projetos",
+      "intro": "Na J&A Automação, cada projeto é desenvolvido com um objetivo: resolver desafios industriais reais. Desde programação de PLC \\u0026 HMI até robótica, projetos BIW, simulação e comissionamento virtual, nossas soluções oferecem melhorias mensuráveis em eficiência, segurança e redução de custos.",
       "items": [
-        "Programação de PLC, IHM e Supervisório.",
-        "Simulação de Linha e Processos com Robô.",
-        "Projeto Elétrico, Mecânico, Hidráulico e Pneumático.",
-        "Assistência Técnica de Componentes Eletrônicos.",
-        "Treinamento de Manutenção e Operacional."
+        "Ao longo dos últimos 15+ anos, executamos com sucesso projetos nos setores automotivo, aviação, envase e bens de consumo, em parceria com líderes globais como Tesla, GM, Coca-Cola, Heineken, FEMSA e Paulaner.",
+        "Nosso portfólio inclui integrações de linhas de baterias, oficinas robotizadas de carrocerias, otimizações de linhas de envase e programas de comissionamento virtual — cada um adaptado para atender às demandas específicas de linhas de alta performance.",
+        "Com presença em 30 países e uma equipe treinada diretamente com fabricantes como Siemens, Rockwell e Mitsubishi, a J&A Automação garante que cada projeto seja mais do que uma instalação — é uma solução estratégica para crescimento sustentável."
       ]
     },
     "helpdesk": {
@@ -229,6 +199,201 @@
         "image": "/images/home/carrossel_3.jpg"
       }
     ]
+  },
+  "casesPage": {
+    "title": "Cases de Sucesso",
+    "subtitle": "Descubra como a J&A Automação transformou processos de manufatura em múltiplas indústrias com soluções de automação de ponta.",
+    "altText": "Cases de Sucesso - Automação Industrial",
+    "stats": {
+      "projects": "Projetos",
+      "industries": "Indústrias",
+      "years": "Anos",
+      "successRate": "Taxa de Sucesso"
+    },
+    "projectPeriod": "Período do Projeto:",
+    "projectDescription": "Descrição do Projeto",
+    "projectImage": "Imagem do Projeto",
+    "noProjectsFound": "Nenhum Projeto Encontrado",
+    "noProjectsMessage": "Não conseguimos encontrar projetos para a indústria selecionada.",
+    "viewAllProjects": "Ver Todos os Projetos"
+  },
+  "caseStudies": {
+    "beverage-1": {
+      "project": "Kaizen em linhas de engarrafamento (Heineken Haiti)",
+      "description": "Auditoria da linha, trabalhando nas deficiências da linha como operadores, manutenção, planejamento de suprimentos. Aumento de 20 pontos na eficiência média"
+    },
+    "beverage-2": {
+      "project": "Alimentador de Tampa para Tampadora Zalkin - Campari",
+      "description": "Modificação de software PLC para adequar a nova tampadora na enchedora Krones. Simatic Step 7 (Siemens)"
+    },
+    "beverage-3": {
+      "project": "Linha de envase 40k g/h BRANA (Haiti) Heineken",
+      "description": "Comissionamento, Ramp up, aumento de eficiência e operação assistida. Sistema Simatic Step 7 (Siemens)"
+    },
+    "beverage-4": {
+      "project": "Mudança de Formato para PET 500ml Ambev Fortaleza",
+      "description": "Mudança de software do transportador pneumático. Sistema Simatic Step 7 (Siemens)"
+    },
+    "beverage-5": {
+      "project": "Mudança Blue Spirit ICE Cervejaria Petrópolis",
+      "description": "Receitas e modificação de software para rodar novas garrafas na linha. Simatic Step 7 (Siemens)"
+    },
+    "beverage-6": {
+      "project": "Linha de Envase 18000 g/h Campari",
+      "description": "Montagem, comissionamento e testes de produção. Sistema Simatic Step 7 (Siemens)"
+    },
+    "beverage-7": {
+      "project": "Rotuladora PET e Transportador de Entrada Coca Cola - Amapá",
+      "description": "Montagem, comissionamento e testes de produção. Comtroll 15000 g/h. Siemens Step 7"
+    },
+    "beverage-8": {
+      "project": "Formulação Contínua Ades Unilever Pouso Alegre",
+      "description": "Desenvolvimento de software, comissionamento e testes de produção. Contrologix e Supervisório Factory Talk (Rockwell)"
+    },
+    "energy-1": {
+      "project": "Expansão de Limpador e Silo para Grãos de Soja (Incobrasa)",
+      "description": "Projeto de automação para expansão de controle de Silo para processo de secagem de grãos de soja. PLC Rockwell. Supervisório Wonderware InTouch"
+    },
+    "energy-2": {
+      "project": "Linha de Envase de Óleo de Soja (Mudanças de Automação) (Incobrasa)",
+      "description": "Mudanças no transportador para adequar nova produção e confiabilidade. Mudanças no paletizador para nova formação de paletes. Troca de sinais da rotuladora para transportador. PLC Siemens. IHM Siemens"
+    },
+    "energy-3": {
+      "project": "Unidade de Recuperação de Vapor P-75",
+      "description": "Unidade de recuperação de vapor para plataforma de Petróleo e Gás, desenvolvimento elétrico e de automação. FAT, FMEA e toda documentação"
+    },
+    "energy-4": {
+      "project": "Gerador de Nitrogênio P15 Petrobras",
+      "description": "Desenvolvimento de automação, documentação, comissionamento. FAT e FMEA para Ambiente Exd. Sistema Altus para PLC. IHM Siemens"
+    },
+    "energy-5": {
+      "project": "Gerador de Nitrogênio P10 Petrobras",
+      "description": "Desenvolvimento de automação, documentação, comissionamento. FAT e FMEA para Ambiente Exd. Sistema Altus para PLC. IHM Siemens"
+    },
+    "energy-6": {
+      "project": "Gerador de Nitrogênio P11 Petrobras",
+      "description": "Desenvolvimento de automação, documentação, comissionamento. FAT e FMEA para Ambiente Exd. Sistema Altus para PLC. IHM Siemens"
+    },
+    "automotive-1": {
+      "project": "Prensa de Estampagem Schuler Ford",
+      "description": "Melhoria de automação, solução de problemas, comissionamento, serviço"
+    },
+    "automotive-2": {
+      "project": "Forno de Chicote Elétrico BMW",
+      "description": "Extensão do forno de chicote elétrico. Siemens STEP 7 e WinCC Flexible"
+    },
+    "automotive-3": {
+      "project": "Linha de Casamento BMW Spartanburg SC",
+      "description": "Integração PLC e Robô na linha de casamento, trem de força e carroceria"
+    },
+    "automotive-4": {
+      "project": "Assistência de Elevação de Tampa BMW Manufacturing Company",
+      "description": "Assistência de elevação de tampa na banda 19, todas as posições de acordo com a carroceria. Sistema: Simatic S7, Festo CPX, Profinet/Profisafe, TIA 13"
+    },
+    "automotive-5": {
+      "project": "Enchimento de Óleo Diferencial Poke Durr (BMW USA)",
+      "description": "Intertravamento para evitar posicionamento incorreto do bico de enchimento. Sistema: Siemens S7 TIA"
+    },
+    "automotive-6": {
+      "project": "NVLD BMW South Carolina",
+      "description": "Comissionamento, melhorias de intertravamento, aceitação do cliente. Sistema: Siemens TIA"
+    },
+    "automotive-7": {
+      "project": "Funilaria Mercedes Benz - Alabama EUA",
+      "description": "Reconstrução do Testador ABS BMW USA: Comissionamento Movidrive e inicialização do sistema."
+    },
+    "cosmetics-1": {
+      "project": "Linha Hotfill para maquiagem Avon",
+      "description": "Linha hotfill para produtos de maquiagem. Máquinas: Indexação de Garrafas, Transportador, Enchedora (enchimento a quente), Tampadora, Integração de linha (Unidade de resfriamento, Robô pick and place, Rotuladora). Responsabilidades: Desenvolvimento de escopo e diagrama, Desenvolvimento de Automação (PLC e IHM), comissionamento, FAT e SAT. Rockwell"
+    },
+    "cosmetics-2": {
+      "project": "Indexação de Garrafas e Enchedora Avon",
+      "description": "Desenvolvimento de Automação (PLC e IHM), Testes e comissionamento, FAT e SAT. Rockwell"
+    },
+    "cosmetics-3": {
+      "project": "Upgrade do Transportador de Puck Avon",
+      "description": "Modificação do transportador para obter um buffer de puck na entrada da enchedora (Avon São Paulo). Simotion (Siemens)"
+    },
+    "cosmetics-4": {
+      "project": "Encartuchadora CMF 60 por minuto Grupo Boticário - Optima Group Gmbh (Schwäbisch Hall, Alemanha)",
+      "description": "Montagem, comissionamento, inicialização, FAT, IQ OQ, e toda a documentação do inglês para o português. Simotion (Siemens)"
+    },
+    "cosmetics-5": {
+      "project": "Enchedora de Proteção contra Insetos SC Johnson Manaus-AM",
+      "description": "Montagem, comissionamento, inicialização e ramp up. Controle de Movimento Simotion, IHM WinCC Flexible (Siemens)"
+    },
+    "cosmetics-6": {
+      "project": "Pick and Place de Tampa Avon México",
+      "description": "Sistema robótico para alimentar tampas na linha. Comissionamento e Inicialização para Robô Fanuc"
+    }
+  },
+  "servicesPage": {
+    "title": "Soluções em Automação Industrial",
+    "subtitle": "Tecnologia de ponta e expertise técnica para otimizar seus processos industriais e aumentar a produtividade",
+    "brands": "Marcas",
+    "differentials": "Diferenciais",
+    "learnMore": "Saiba mais",
+    "services": {
+      "plc-ihm": {
+        "title": "Programação PLC & HMI",
+        "description": "Quando as máquinas param, a produção perde milhões. Na J&A Automation, oferecemos expertise em programação PLC & HMI em Siemens, Rockwell, Mitsubishi, Omron, Panasonic e Unitronics. Nossas soluções reduzem paradas, garantem conformidade com normas internacionais e aumentam a confiabilidade da produção."
+      },
+      "robotic-simulation": {
+        "title": "Robótica & Simulação",
+        "description": "Robôs ineficientes drenam produtividade. Com a expertise da J&A Automation em simulação robótica e Tecnomatix, entregamos trajetórias otimizadas, estudos de ciclo e programação offline impecável para acelerar o comissionamento e maximizar o ROI."
+      },
+      "biw": {
+        "title": "Projetos BIW (Body in White)",
+        "description": "Projetos BIW complexos exigem precisão. Erros de design e integração podem gerar atrasos caros em linhas automotivas. Com mais de uma década de expertise, a J&A Automation entrega projetos BIW completos, do design de processos à programação offline, confiada por líderes automotivos globais."
+      },
+      "virtual-commissioning": {
+        "title": "Virtual Commissioning (VCx)",
+        "description": "Atrasos no startup custam caro. O comissionamento tradicional expõe riscos tarde demais no processo. Com o Virtual Commissioning (VCx), a J&A Automation valida lógica, robótica e segurança antes da instalação, reduzindo custos e acelerando o time-to-market."
+      },
+      "montagem-paineis": {
+        "title": "Projetos Elétricos / Mecânicos / Hidráulicos / Pneumáticos",
+        "description": "Um design mal feito gera retrabalho caro. Na J&A Automation, entregamos projetos completos de engenharia elétrica, mecânica, hidráulica e pneumática, garantindo segurança, conformidade e integração perfeita à sua linha."
+      },
+      "nr12": {
+        "title": "Adequação de Máquinas a Norma NR-12",
+        "description": "Adequação de máquinas e equipamentos às normas de segurança do trabalho",
+        "features": [
+          "Análise de riscos",
+          "Implementação de dispositivos de segurança",
+          "Documentação técnica",
+          "Treinamento de operadores"
+        ]
+      },
+      "suporte-tecnico": {
+        "title": "Help Desk & Suporte Remoto",
+        "description": "O downtime não espera — e o suporte também não deve esperar. O Help Desk & Suporte Remoto da J&A Automation oferece diagnóstico rápido de falhas diretamente no seu PC, reduzindo o tempo de resposta e mantendo sua linha operando."
+      },
+      
+      "operational-training": {
+        "title": "Treinamentos Operacionais",
+        "description": "A tecnologia é tão forte quanto as pessoas que a operam. A J&A Automation oferece treinamentos operacionais diretamente com fabricantes, capacitando sua equipe a operar, manter e otimizar sistemas de automação com confiança."
+      },
+      "pneumaticos": {
+        "title": "Projeto Pneumático, Hidráulico e Vácuo",
+        "description": "Projeto Pneumático, Hidráulico e Vácuo (Plano A e P)",
+        "features": [
+          "Dimensionamento de sistemas",
+          "Seleção de componentes",
+          "Documentação técnica",
+          "Otimização de consumo"
+        ]
+      },
+      "mitsubishi": {
+        "title": "Representação Mitsubishi",
+        "description": "Representação em PLC e VFD Mitsubishi e treinamento de programação em PLC e IHM",
+        "features": [
+          "Fornecimento de equipamentos",
+          "Suporte técnico especializado",
+          "Treinamento dedicado",
+          "Garantia estendida"
+        ]
+      }
+    }
   },
   "contactPage": {
     "title": "Vamos conversar.",

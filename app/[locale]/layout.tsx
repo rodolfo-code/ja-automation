@@ -11,6 +11,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+export async function generateStaticParams() {
+  return [{ locale: "pt" }, { locale: "en" }];
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://consulting-website.com"),
   title: {
@@ -65,27 +69,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ 
-  children, 
-  params 
-}: { 
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const locale = params?.locale || 'pt';
-  const lang = locale === 'en' ? 'en-US' : 'pt-BR';
-  
+export default function RootLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
+  const locale = params?.locale || "pt";
+  const lang = locale === "en" ? "en-US" : "pt-BR";
+
   // Validar se o idioma é suportado
-  if (!['pt', 'en'].includes(locale)) {
+  if (!["pt", "en"].includes(locale)) {
     return <div>Idioma não suportado</div>;
   }
-  
+
   return (
     <html lang={lang} className={inter.variable}>
       <body className={`${inter.className} antialiased`}>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">{children}</main>
+
           <Footer />
         </div>
       </body>
