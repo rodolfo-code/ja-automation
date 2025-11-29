@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Consulting Company" }],
   creator: "Consulting Company",
   publisher: "Consulting Company",
+  icons: {
+    icon: "/images/logos/logo_jaautomation.png",
+  },
   formatDetection: {
     email: false,
     address: false,
