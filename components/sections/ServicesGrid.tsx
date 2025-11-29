@@ -38,7 +38,7 @@ export function ServicesGrid() {
       },
       {
         threshold: 0.1,
-        rootMargin: "50px"
+        rootMargin: "50px",
       }
     );
 
@@ -54,10 +54,7 @@ export function ServicesGrid() {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative py-12 sm:py-16 lg:py-20 bg-white overflow-hidden"
-    >
+    <section ref={sectionRef} className="relative py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-50/30 to-transparent"></div>
@@ -67,10 +64,11 @@ export function ServicesGrid() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${isVisible
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-8'
-          }`}>
+        <div
+          className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             {(t as any).servicesGrid?.title || "Our Services"}
           </h2>
@@ -88,39 +86,33 @@ export function ServicesGrid() {
               className="w-full max-w-sm block h-full"
             >
               <div
-                className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 cursor-pointer h-full flex flex-col transition-all duration-700 ease-out ${isVisible
-                  ? 'opacity-100 translate-y-0 scale-100'
-                  : 'opacity-0 translate-y-16 scale-95'
-                  }`}
+                className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 cursor-pointer h-full flex flex-col transition-all duration-700 ease-out ${
+                  isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-16 scale-95"
+                }`}
                 style={{
-                  transitionDelay: isVisible ? `${index * 150}ms` : '0ms'
+                  transitionDelay: isVisible ? `${index * 150}ms` : "0ms",
                 }}
               >
                 {/* Service Image */}
                 <div className="w-full h-48 relative">
-                  <Image
-                    src="/images/home/services/service_card.avif"
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/home/services/service_card.avif" alt={service.title} fill className="object-cover" />
                 </div>
 
                 {/* Content */}
                 <div className="p-6 flex-1">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-3">
-                    {service.title}
-                  </h2>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
+                  <h2 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h2>
+                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
                 </div>
               </div>
             </Link>
           ))}
 
           {/* Cards adicionais com transição suave */}
-          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 col-span-full place-items-center transition-all duration-700 ease-in-out ${showAllServices ? 'opacity-100 max-h-none' : 'opacity-0 max-h-0 overflow-hidden'} pb-10`}>
+          <div
+            className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 col-span-full place-items-center transition-all duration-700 ease-in-out ${
+              showAllServices ? "opacity-100 max-h-none" : "opacity-0 max-h-0 overflow-hidden"
+            } pb-10`}
+          >
             {services.slice(6).map((service: any, index: number) => (
               <Link
                 key={service.id}
@@ -128,32 +120,20 @@ export function ServicesGrid() {
                 className="w-full max-w-sm block h-full"
               >
                 <div
-                  className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 cursor-pointer h-full flex flex-col transition-all duration-700 ease-out ${showAllServices
-                    ? 'opacity-100 translate-y-0 scale-100'
-                    : 'opacity-0 translate-y-16 scale-95'
-                    }`}
+                  className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 cursor-pointer h-full flex flex-col transition-all duration-700 ease-out ${
+                    showAllServices ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-16 scale-95"
+                  }`}
                   style={{
-                    transitionDelay: showAllServices ? `${index * 150}ms` : '0ms'
+                    transitionDelay: showAllServices ? `${index * 150}ms` : "0ms",
                   }}
                 >
-                  {/* Service Image */}
                   <div className="w-full h-48 relative">
-                    <Image
-                      src="/images/home/services/service_card.avif"
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src="/images/home/services/service_card.avif" alt={service.title} fill className="object-cover" />
                   </div>
 
-                  {/* Content */}
                   <div className="p-6 flex-1">
-                    <h2 className="text-xl font-semibold text-gray-900 mb-3">
-                      {service.title}
-                    </h2>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {service.description}
-                    </p>
+                    <h2 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h2>
+                    <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
                   </div>
                 </div>
               </Link>
@@ -161,7 +141,6 @@ export function ServicesGrid() {
           </div>
         </div>
 
-        {/* Toggle Button */}
         {services.length > 6 && (
           <div className="flex justify-center mt-10">
             <button
@@ -179,7 +158,7 @@ export function ServicesGrid() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={`transition-transform duration-300 ${showAllServices ? 'rotate-180' : ''}`}
+                className={`transition-transform duration-300 ${showAllServices ? "rotate-180" : ""}`}
               >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
@@ -188,10 +167,11 @@ export function ServicesGrid() {
         )}
 
         {/* Call to Action */}
-        <div className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-800 ease-out ${isVisible
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-8'
-          }`}>
+        <div
+          className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-800 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 px-4">
             {(t as any).servicesGrid?.ctaText || "Ready to transform your industrial processes?"}
           </p>
