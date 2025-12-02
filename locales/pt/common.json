@@ -36,14 +36,7 @@
     "vfd": {
       "title": "Programação de Drivers e Inversores",
       "description": "Configuração e programação de inversores de frequência para controle de motores",
-      "brands": [
-        "Emerson",
-        "Siemens",
-        "Rockwell",
-        "Mitsubishi",
-        "Sew",
-        "Danfoss"
-      ]
+      "brands": ["Emerson", "Siemens", "Rockwell", "Mitsubishi", "Sew", "Danfoss"]
     },
     "electrical-projects": {
       "title": "Projeto Elétrico",
@@ -144,24 +137,24 @@
     ]
   },
   "aboutSection": {
-    "title": "Sobre a J&A Automação",
+    "title": "Sobre a J&A Automation",
     "presentation": {
       "title": "Apresentação",
       "paragraphs": [
-        "Especialização Global, Impacto Local. Desde 2008, a J&A Automação vem transformando indústrias através de soluções avançadas de automação. Com presença em mais de 30 países e parcerias com líderes globais, desenvolvemos eficiência, segurança e inovação para as fábricas do futuro.",
-        "Fundada em 2008 por um grupo de engenheiros de empresas multinacionais dos setores automotivo e de aviação, a J&A Automação nasceu com uma missão clara: entregar projetos de automação e manutenção de classe mundial.",
-      "Desde nossos primeiros dias desenvolvendo soluções de PLC e HMI, expandimos para robótica, projetos BIW, simulação e comissionamento virtual, tornando-nos um parceiro confiável para indústrias que não podem se dar ao luxo de ter tempo de inatividade.",
-"Hoje, a J&A Automação opera em 30 países, com projetos entregues nas Américas, Europa, África e Ásia. Nosso portfólio inclui colaborações com gigantes da indústria como Tesla, GM, Coca-Cola, Heineken, FEMSA, Paulaner e muitos outros.",
+        "Especialização Global, Impacto Local. Desde 2008, a J&A Automation vem transformando indústrias através de soluções avançadas de automação. Com presença em mais de 30 países e parcerias com líderes globais, desenvolvemos eficiência, segurança e inovação para as fábricas do futuro.",
+        "Fundada em 2008 por um grupo de engenheiros de empresas multinacionais dos setores automotivo e de aviação, a J&A Automation nasceu com uma missão clara: entregar projetos de automação e manutenção de classe mundial.",
+        "Desde nossos primeiros dias desenvolvendo soluções de PLC e HMI, expandimos para robótica, projetos BIW, simulação e comissionamento virtual, tornando-nos um parceiro confiável para indústrias que não podem se dar ao luxo de ter tempo de inatividade.",
+        "Hoje, a J&A Automation opera em 30 países, com projetos entregues nas Américas, Europa, África e Ásia. Nosso portfólio inclui colaborações com gigantes da indústria como Tesla, GM, Coca-Cola, Heineken, FEMSA, Paulaner e muitos outros.",
         "Com equipes multilíngues fluentes em inglês, alemão e espanhol, e treinamento direto com fabricantes como Siemens, Rockwell, Mitsubishi, Atlas Copco e RedLion, garantimos padrões mundiais adaptados às necessidades locais."
-        ]
-        },
+      ]
+    },
     "projects": {
       "title": "Nossos Projetos",
-      "intro": "Na J&A Automação, cada projeto é desenvolvido com um objetivo: resolver desafios industriais reais. Desde programação de PLC \\u0026 HMI até robótica, projetos BIW, simulação e comissionamento virtual, nossas soluções oferecem melhorias mensuráveis em eficiência, segurança e redução de custos.",
+      "intro": "Na J&A Automation, cada projeto é desenvolvido com um objetivo: resolver desafios industriais reais. Desde programação de PLC & HMI até robótica, projetos BIW, simulação e comissionamento virtual, nossas soluções oferecem melhorias mensuráveis em eficiência, segurança e redução de custos.",
       "items": [
         "Ao longo dos últimos 15+ anos, executamos com sucesso projetos nos setores automotivo, aviação, envase e bens de consumo, em parceria com líderes globais como Tesla, GM, Coca-Cola, Heineken, FEMSA e Paulaner.",
         "Nosso portfólio inclui integrações de linhas de baterias, oficinas robotizadas de carrocerias, otimizações de linhas de envase e programas de comissionamento virtual — cada um adaptado para atender às demandas específicas de linhas de alta performance.",
-        "Com presença em 30 países e uma equipe treinada diretamente com fabricantes como Siemens, Rockwell e Mitsubishi, a J&A Automação garante que cada projeto seja mais do que uma instalação — é uma solução estratégica para crescimento sustentável."
+        "Com presença em 30 países e uma equipe treinada diretamente com fabricantes como Siemens, Rockwell e Mitsubishi, a J&A Automation garante que cada projeto seja mais do que uma instalação — é uma solução estratégica para crescimento sustentável."
       ]
     },
     "helpdesk": {
@@ -202,7 +195,7 @@
   },
   "casesPage": {
     "title": "Cases de Sucesso",
-    "subtitle": "Descubra como a J&A Automação transformou processos de manufatura em múltiplas indústrias com soluções de automação de ponta.",
+    "subtitle": "Descubra como a J&A Automation transformou processos de manufatura em múltiplas indústrias com soluções de automação de ponta.",
     "altText": "Cases de Sucesso - Automação Industrial",
     "stats": {
       "projects": "Projetos",
@@ -357,18 +350,13 @@
       "nr12": {
         "title": "Adequação de Máquinas a Norma NR-12",
         "description": "Adequação de máquinas e equipamentos às normas de segurança do trabalho",
-        "features": [
-          "Análise de riscos",
-          "Implementação de dispositivos de segurança",
-          "Documentação técnica",
-          "Treinamento de operadores"
-        ]
+        "features": ["Análise de riscos", "Implementação de dispositivos de segurança", "Documentação técnica", "Treinamento de operadores"]
       },
       "suporte-tecnico": {
         "title": "Help Desk & Suporte Remoto",
         "description": "O downtime não espera — e o suporte também não deve esperar. O Help Desk & Suporte Remoto da J&A Automation oferece diagnóstico rápido de falhas diretamente no seu PC, reduzindo o tempo de resposta e mantendo sua linha operando."
       },
-      
+
       "operational-training": {
         "title": "Treinamentos Operacionais",
         "description": "A tecnologia é tão forte quanto as pessoas que a operam. A J&A Automation oferece treinamentos operacionais diretamente com fabricantes, capacitando sua equipe a operar, manter e otimizar sistemas de automação com confiança."
@@ -376,22 +364,12 @@
       "pneumaticos": {
         "title": "Projeto Pneumático, Hidráulico e Vácuo",
         "description": "Projeto Pneumático, Hidráulico e Vácuo (Plano A e P)",
-        "features": [
-          "Dimensionamento de sistemas",
-          "Seleção de componentes",
-          "Documentação técnica",
-          "Otimização de consumo"
-        ]
+        "features": ["Dimensionamento de sistemas", "Seleção de componentes", "Documentação técnica", "Otimização de consumo"]
       },
       "mitsubishi": {
         "title": "Representação Mitsubishi",
         "description": "Representação em PLC e VFD Mitsubishi e treinamento de programação em PLC e IHM",
-        "features": [
-          "Fornecimento de equipamentos",
-          "Suporte técnico especializado",
-          "Treinamento dedicado",
-          "Garantia estendida"
-        ]
+        "features": ["Fornecimento de equipamentos", "Suporte técnico especializado", "Treinamento dedicado", "Garantia estendida"]
       }
     }
   },
@@ -420,7 +398,7 @@
     "solutions": "Soluções",
     "cases": "Cases",
     "contact": "Contato",
-    "copyright": "© {year} J&A Automação. Todos os direitos reservados.",
+    "copyright": "© {year} J&A Automation. Todos os direitos reservados.",
     "continents": {
       "americas": "Américas",
       "europe": "Europa",

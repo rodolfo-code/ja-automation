@@ -175,8 +175,8 @@ export async function getTranslations(locale: Locale): Promise<Translations> {
     return translations.default;
   } catch (error) {
     console.error(`Failed to load translations for locale: ${locale}`, error);
-    // Fallback para português se houver erro
-    const fallback = await import("../locales/pt/common.json");
+    // Fallback para inglês se houver erro
+    const fallback = await import("../locales/en/common.json");
     return fallback.default as any;
   }
 }
@@ -238,7 +238,7 @@ export function useTranslations() {
       solutions: "Soluções",
       cases: "Cases",
       contact: "Contato",
-      copyright: "© {year} J&A Automação. Todos os direitos reservados.",
+      copyright: "© {year} J&A Automation. Todos os direitos reservados.",
       continents: {
         americas: "Américas",
         europe: "Europa",
@@ -359,7 +359,7 @@ export function useTranslations() {
 
     casesPage: {
       title: "Cases de Sucesso",
-      subtitle: "Descubra como a J&A Automação transformou processos de manufatura em múltiplas indústrias com soluções de automação de ponta.",
+      subtitle: "Descubra como a J&A Automation transformou processos de manufatura em múltiplas indústrias com soluções de automação de ponta.",
       altText: "Cases de Sucesso - Automação Industrial",
       stats: {
         projects: "Projetos",
@@ -437,8 +437,8 @@ export function getLocaleFromPath(pathname: string): Locale {
   if (firstSegment === "en") return "en";
   if (firstSegment === "pt") return "pt";
 
-  // Fallback para português
-  return "pt";
+  // Fallback para inglês
+  return "en";
 }
 
 // Função para obter o caminho sem o idioma
